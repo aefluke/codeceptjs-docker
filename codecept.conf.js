@@ -18,5 +18,19 @@ exports.config = {
     },
     bootstrap: null,
     mocha: {},
-    name: 'codeceptjs-docker'
-}
+    name: 'codeceptjs-docker',
+    "plugins": {
+        "screenshotOnFail": {
+            "enabled": true
+        },
+        "allure": {
+            "enabled": true
+        },
+        "autoDelay": {
+            "enabled": true
+        },
+        "retryFailedStep": {
+            "enabled": true
+        }
+    }
+};
